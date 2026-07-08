@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    string = []
-    for i in my_string:
-        if i != "c" and i != "C":
-            string.append(i)
-        if i == "c" and i == "C":
-            string.append("")
-    return "".join(string)
+    """Return a string without the characters c and C."""
+    new_string = ""
+
+    for char in my_string:
+        if char != "c" and char != "C":
+            new_string += char
+
+    return new_string
