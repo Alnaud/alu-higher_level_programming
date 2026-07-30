@@ -59,7 +59,6 @@ class Rectangle:
         """Return the printable representation of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return ""
-
         rect = []
         for i in range(self.__height):
             rect.append(str(self.print_symbol) * self.__width)
